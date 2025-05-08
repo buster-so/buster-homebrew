@@ -35,10 +35,10 @@ rm buster-cli-darwin-arm64.tar.gz buster-cli-darwin-x86_64.tar.gz buster-cli-lin
 
 # Update formula
 echo "Updating $FORMULA_PATH..."
-sed -i "s/version \".*\"/version \"$LATEST_VERSION\"/" "$FORMULA_PATH"
-sed -i "s/sha256 \".*\"/sha256 \"$ARM64_CHECKSUM\"/" "$FORMULA_PATH"
-sed -i "s/sha256 \".*\"/sha256 \"$X86_64_CHECKSUM\"/" "$FORMULA_PATH"
-sed -i "s/sha256 \".*\"/sha256 \"$LINUX_CHECKSUM\"/" "$FORMULA_PATH"
-sed -i "s/v<VERSION>/v$LATEST_VERSION/g" "$FORMULA_PATH"
+sed -i '' "s/version ".*"/version "$LATEST_VERSION"/" "$FORMULA_PATH"
+sed -i '' "s/sha256 ".*" # arm64_big_sur/sha256 "$ARM64_CHECKSUM" # arm64_big_sur/" "$FORMULA_PATH"
+sed -i '' "s/sha256 ".*" # x86_64_big_sur/sha256 "$X86_64_CHECKSUM" # x86_64_big_sur/" "$FORMULA_PATH"
+sed -i '' "s/sha256 ".*" # x86_64_linux/sha256 "$LINUX_CHECKSUM" # x86_64_linux/" "$FORMULA_PATH"
+sed -i '' "s/v<VERSION>/v$LATEST_VERSION/g" "$FORMULA_PATH"
 
 echo "Formula updated to version $LATEST_VERSION."

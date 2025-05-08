@@ -10,7 +10,7 @@ class Buster < Formula
       regex(/^v?(\d+(?:\.\d+)*)$/i)
     end
   
-    version "0.0.7"
+    version 0.1.1
   
     on_macos do
       on_arm do
