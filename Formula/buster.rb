@@ -4,7 +4,7 @@
 class Buster < Formula
   desc "Command-line interface for using buster Buster"
   homepage "https://github.com/buster-so/buster"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   livecheck do
@@ -15,18 +15,18 @@ class Buster < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/buster-so/buster/releases/download/v0.1.4/buster-cli-darwin-arm64.tar.gz"
-      sha256 "edaae81f1d856f64ab349bbd1865b8f1a5d27567da90231f6ee2a8561100ac25"
+      url "https://github.com/buster-so/buster/releases/download/v0.1.5/buster-cli-darwin-arm64.tar.gz"
+      sha256 "46c659a027f9dfb386ae584dbfd911c9878d97f1123fdde3e0094fc285353229"
     end
     on_intel do
-      url "https://github.com/buster-so/buster/releases/download/v0.1.4/buster-cli-darwin-x86_64.tar.gz"
-      sha256 "58e91d8c28833ee7371be445a7f5f1152458bf35cd93a79055e638fbb4955f14"
+      url "https://github.com/buster-so/buster/releases/download/v0.1.5/buster-cli-darwin-x86_64.tar.gz"
+      sha256 "bb2a4cc1af6e17c474723c4ca27751e365cc2de87f1923587dcc9767d699ad59"
     end
   end
 
   on_linux do
-    url "https://github.com/buster-so/buster/releases/download/v0.1.4/buster-cli-linux-x86_64.tar.gz"
-    sha256 "5a943fecaf1cd01919ccef19ad0222c151e5c08e5f7ce2c86ad30aeed008fd27"
+    url "https://github.com/buster-so/buster/releases/download/v0.1.5/buster-cli-linux-x86_64.tar.gz"
+    sha256 "dd54d060df5047c3686f2e183036a60760e92c275b29770633720161fa431bf8"
   end
 
   def install
