@@ -30,7 +30,7 @@ class Buster < Formula
   end
 
   def install
-    bin.install "buster-cli" => "buster"
+    bin.install "buster"
   end
 
   test do
