@@ -16,17 +16,17 @@ class Buster < Formula
   on_macos do
     on_arm do
       url "https://github.com/buster-so/buster/releases/download/v#{version}/buster-cli-darwin-arm64.tar.gz"
-      sha256 "0f84ddf9d58e84dc05612ca8b70d93cca410536ce38ff461f9c6e5ec1f1405e8"
+      sha256 "3deac1c33ef2a4ac99b54676966f99a8bfd55bbea983a611c44724a9506b84c4"
     end
     on_intel do
       url "https://github.com/buster-so/buster/releases/download/v#{version}/buster-cli-darwin-x86_64.tar.gz"
-      sha256 "412e9e7995d8cb4e2fe0e6ff06c019895f30b297abd0e94c0032d9404f76c56f"
+      sha256 "11429c2dee168499af87bb2da1c339b9fd240e78cdb57e27038e072cec017e23"
     end
   end
 
   on_linux do
     url "https://github.com/buster-so/buster/releases/download/v#{version}/buster-cli-linux-x86_64.tar.gz"
-    sha256 "87b1dd0f765900a2b11b520c567700ed6efbf05a82e63fefcbf5be39407dd173"
+    sha256 "741e47990e4ad394534b28b268048e4470eb7b5853685c12f1f6b1ea2c4e1ef4"
   end
 
   def install
